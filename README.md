@@ -1,2 +1,6 @@
 # restapi
-php restapi library
+simple php restapi library
+
+GET PUT POST DELETE
+
+error ahndler and display
