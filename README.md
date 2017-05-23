@@ -1,6 +1,6 @@
-# restapi
-simple php restapi library
+# php rest lib
+simple php rest lib
 
 GET PUT POST DELETE
 
-error ahndler and display
+Error handler & display

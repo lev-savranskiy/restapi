@@ -6,8 +6,7 @@
  * @param string $method
  * @param bool $showError
  * @return mixed
- * @throws Exception
- * @author Lev Savranskiy <lev.savranskiy@thebridgecorp.com>
+ * @author Lev Savranskiy <lev.savranskiy@gmail.com>
  */
 
 
@@ -71,9 +70,6 @@ function RestAPI($url , $method = 'GET',   $data = null , $showError = false) {
     if($showError && ($httpCode < 200 || $httpCode > 399)){
 
         echo '<h1>ERROR: ' . $httpCode  .'</h1>';
-
-       // echo API_STRING;
-
         echo '<hr/><pre>';
         echo 'url: ' . $url . '<br/>';
         echo 'method: ' . $method . '<br/>';
@@ -81,7 +77,6 @@ function RestAPI($url , $method = 'GET',   $data = null , $showError = false) {
         echo  'RESPONSE ';
         print_r($result);
         echo  '</pre>';
-        //throw new Exception();
         return null;
     }else{
         return $result;
